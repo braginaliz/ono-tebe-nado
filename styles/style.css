@@ -1,1 +1,332 @@
 /* место для вашего кода */
+
+.overlay {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 97px 45px;
+}
+
+.header__links-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 33px 35px;
+    list-style: circle; 
+}
+
+.header__links-list-item {   
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header__link_active {
+    text-decoration: none; 
+}
+
+.header__link {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.header__logo {
+    display: flex;
+    justify-self: center;
+    width:148px;
+    height:105px;
+
+}
+.header__logo-image {
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .header__address{
+    margin-left: 184px;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight:400;
+    font-size: 18px; 
+  }
+  .header__address_contacts{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+  }
+
+
+.cover{
+    position: relative;
+    z-index: 0;
+    padding: 0px 0px;
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cover__title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 100px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+  }
+
+.aligned-text {
+    padding-top: 165px;
+    padding-left: 50px;
+}
+
+.aligned-text_center {
+    padding-top: 7px;
+    padding-left: 336px;
+}
+.aligned-text_right {
+    padding-top: 2px;
+    padding-left: 633px;
+}
+.letter-spacing-extended{
+    letter-spacing: 60px;
+}
+
+.cover__description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 123px;
+    padding-left: 78px;
+    padding-bottom: 50px ;
+
+}
+
+
+.cover__description-text{
+    letter-spacing: normal;
+    word-spacing: 18px;
+    font-family: Raleway;
+    font-weight:400;
+    font-size: 22px;
+    line-height:28px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+}
+
+.bet-button {
+    display: inline-block;
+    margin-left: 80px;
+    border: 1px solid #fff;
+    padding: 12px 30px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+.lots {
+    padding: 179px 24px 185px 24px;
+}
+
+.lots__heading {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-left: 35px;
+    padding-bottom: 25px;
+
+}
+
+.lots__card-list {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.lots__card-list-item{
+    flex-grow: 1;
+    height: 563px;
+    width: 334px;
+}
+
+.card-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 51px 40px 40px;
+
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26.4px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    text-transform: uppercase;
+    color: #fff;
+   
+  }
+  
+.card__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    justify-self: center;
+
+  }
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+  }
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+  }
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+  }
+
+.lots__look-more-link {
+    display: block;
+    font-size: 20px;
+    margin-left: 40px;
+    padding-top: 30px;
+}
+
+.about {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 334px 1fr;
+    padding-left: 24px;
+
+}
+.about__logo__image {
+    width:148px;
+    height:114px;
+}
+
+.about__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 auto;
+    
+}
+
+.about__title {
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    line-height: 240px;
+
+}
+
+.about__text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: normal;
+}
+
+.about__text:first-of-type {
+    margin-bottom: 25px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 180px 50px 88px;
+}
+.footer_menu-list{
+    display: grid;
+    color: black;
+    text-align: center;
+    margin-right: 220px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer__address{
+
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight:400;
+    font-size: 18px; 
+  }
+  .footer__address_contacts{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+  }
+
+.footer__links-list {
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+}
+.footer__link {
+
+    text-underline-offset: 4px;
+}
+.footer__link_active {
+    text-decoration: none;
+}
+
+.footer__social-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer__social-link{
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-left: 48px;
+}
